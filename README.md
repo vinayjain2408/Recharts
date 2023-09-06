@@ -68,3 +68,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+In this we can add package of highcharts highcharts-react-official
+To make a graph of any type
+Command to install library is - npm install highcharts highcharts-react-official
+we are make Activity gauge graph with a react js
