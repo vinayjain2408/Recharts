@@ -1,36 +1,44 @@
-import React, { Component } from "react";
+import React from "react";
 import HighchartsReact from "highcharts-react-official";
 
-class Chart extends Component {
-  constructor(props) {
-    super(props);
-    this.chartRef = React.createRef();
-  }
-
-  exportChart = () => {
-    if (this.chartRef.current) {
-      this.chartRef.current.chart.exportChart();
-    }
-  };
-
-  render() {
-    const { highcharts, options } = this.props;
-
-    return (
-      <div>
-        <HighchartsReact
-          highcharts={highcharts}
-          constructorType={"chart"}
-          options={options}
-          ref={this.chartRef}
-        />
-        <button onClick={this.exportChart}>Export</button>
-      </div>
-    );
-  }
+function Chart({ highcharts, options }) {
+  return (
+    <div>
+      <HighchartsReact highcharts={highcharts} options={options} />
+    </div>
+  );
 }
 
 export default Chart;
 
 
 
+
+
+
+
+
+
+
+
+// import React, { useRef } from "react";
+// import HighchartsReact from "highcharts-react-official";
+
+// function Chart({ highcharts, options }) {
+//   // const chartRef = useRef(null);
+
+
+//   return (
+//     <div>
+//       <HighchartsReact
+//         highcharts={highcharts}
+//         // constructorType={"chart"}
+//         options={options}
+//         // ref={chartRef}
+//       />
+
+//     </div>
+//   );
+// }
+
+// export default Chart;
